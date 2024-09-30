@@ -1,0 +1,21 @@
+<template>
+  <footer>
+    <div class="social-links">
+      <a href="https://github.com/votreprofil" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/votreprofil" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>Dernière mise à jour : {{ currentDate }}</p>
+  </footer>
+</template>
+<script>
+export default {
+  data() {
+    return {
+      currentDate: new Date().toLocaleDateString(),
+    };
+  },
+};
+</script>
+<style scoped>
+/* Styles pour le footer et les icônes des réseaux sociaux */
+</style>

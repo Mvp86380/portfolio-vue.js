@@ -1,0 +1,24 @@
+<template>
+  <header>
+    <img src="@/assets/logo.png" alt="Logo" @click="scrollToTop" />
+    <nav>
+      <ul>
+        <li><router-link to="/">Accueil</router-link></li>
+        <li><a href="#creations">Créations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+</template>
+<script>
+export default {
+  methods: {
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    },
+  },
+};
+</script>
+<style scoped>
+/* Ajoutez des styles pour le header et la navigation */
+</style>
